@@ -16,6 +16,13 @@ framework:
     #fragments: true
     php_errors:
         log: true
+        
+when@dev:
+    framework:
+        http_client:
+            default_options:
+                verify_host: false
+                verify_peer: false
 
 when@test:
     framework:
